@@ -11,6 +11,11 @@
 @import "../components/ui/alert/alert";
 @import "../components/ui/movie/movie";
 @import "../components/ui/avatar/avatar";
+@import "../components/ui/blurb/blurb";
 
 @import "../components/button/button";
 @import "../components/icon/icon";
+
+.listing {
+    @apply relative mx-auto max-w-screen-xl;
+}

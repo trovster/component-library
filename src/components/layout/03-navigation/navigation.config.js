@@ -5,10 +5,10 @@ module.exports = {
   context: {
     navigation: {
       items: {
-        '#homepage': 'Home',
-        '#movies': 'Movies',
-        '#posts': 'Posts',
-        '#about': 'About'
+        'page-homepage': 'Home',
+        'page-movie-listing': 'Movies',
+        'page-posts': 'Posts',
+        'page-about': 'About'
       }
     }
   }

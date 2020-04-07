@@ -4,7 +4,8 @@ module.exports = {
   default: 'default',
   context: {
     footer: {
-      year: new Date().getFullYear()
+      from: 2001,
+      to: new Date().getFullYear()
     }
   }
 }

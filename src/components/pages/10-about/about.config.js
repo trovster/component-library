@@ -1,5 +1,10 @@
 module.exports = {
   title: 'About',
   handle: 'page-about',
-  status: 'prototype'
+  status: 'prototype',
+  context: {
+    navigation: {
+      active: 'page-about'
+    }
+  }
 }
