@@ -15,7 +15,7 @@
     "test": "",
     "lint": "npm run lint:js",
     "lint:js": "npx standard --fix",
-    "deploy": "npm run build && push-dir --dir=www --branch=gh-pages --force"
+    "deploy": "npm run build && push-dir --dir=build --branch=gh-pages --force"
   },
   "dependencies": {
     "@frctl/fractal": "^1.2.1",
