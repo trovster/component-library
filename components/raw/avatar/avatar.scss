@@ -1,0 +1,11 @@
+.avatar {
+    @apply flex items-center mx-auto h-32 w-32 overflow-hidden flex-shrink-0;
+
+    &--circle {
+        @apply rounded-full;
+    }
+
+    &--small {
+        @apply h-16 w-16;
+    }
+}

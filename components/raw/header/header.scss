@@ -1,0 +1,7 @@
+.header {
+    @apply relative py-6 border-b;
+}
+
+.header__logo {
+    @apply relative mx-auto block overflow-hidden text-center text-xl;
+}
