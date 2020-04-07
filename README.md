@@ -19,4 +19,6 @@ npm run watch
 
 The website is hosted using Github Pages using the specific `gh-pages` branch.
 
-This can be done by using `npm run deploy`
+There is a GitHub action which builds and deploys when a commit is pushed to the `master` branch.
+
+This can be done manually by using `npm run deploy`.
