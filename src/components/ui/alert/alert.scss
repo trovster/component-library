@@ -1,0 +1,15 @@
+.alert {
+    @apply bg-white rounded-lg overflow-hidden shadow-xl transform transition-all;
+
+    &__bg {
+        @apply fixed bottom-0 inset-x-0 px-4 pb-4;
+    }
+
+    &__inner {
+        @apply bg-white px-4 pt-5 pb-4;
+    }
+
+    &__footer {
+        @apply bg-gray-200 px-4 py-3;
+    }
+}

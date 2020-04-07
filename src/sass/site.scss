@@ -1,0 +1,16 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "config";
+
+@import "../components/layout/01-header/header";
+@import "../components/layout/02-footer/footer";
+@import "../components/layout/03-navigation/navigation";
+
+@import "../components/ui/alert/alert";
+@import "../components/ui/movie/movie";
+@import "../components/ui/avatar/avatar";
+
+@import "../components/button/button";
+@import "../components/icon/icon";

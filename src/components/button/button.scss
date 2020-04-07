@@ -1,0 +1,25 @@
+.button {
+    @apply inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-sm leading-6 font-medium text-gray-700 shadow-sm transition ease-in-out duration-150;
+
+    &:hover,
+    &:focus,
+    &:active {
+        @apply text-gray-500;
+    }
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    @each $prefix, $color in $buttonVariants {
+        &--#{$prefix} {
+            @apply text-white border-transparent bg-#{$color}-600;
+
+            &:hover,
+            &:focus,
+            &:active {
+                @apply text-white bg-#{$color}-500;
+            }
+        }
+    }
+}
