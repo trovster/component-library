@@ -11,10 +11,27 @@ const theme = require('@frctl/mandelbrot')({
   panels: ['notes', 'html', 'view', 'info']
 })
 
+// Setup handlebar helpers.
+const hbs = require('@frctl/handlebars')({
+  helpers: {
+    uppercase: function (str) {
+      return str.toUpperCase()
+    },
+    ifeq: function (a, b, options) {
+      if (a === b) {
+        return options.fn(this)
+      }
+
+      return options.inverse(this)
+    }
+  }
+})
+
 /* Set the title of the project. */
 fractal.set('project.title', packageJson.title)
 
 /* Component Setup */
+fractal.components.engine(hbs)
 fractal.components.set('path', path.join(__dirname, 'src', 'components'))
 fractal.components.set('default.preview', '@preview')
 fractal.components.set('default.status', 'wip')

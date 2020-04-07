@@ -1,0 +1,15 @@
+.blurb {
+    @apply max-w-sm mx-auto my-3 px-3 items-center leading-tight;
+
+    @screen md {
+        @apply flex max-w-md;
+    }
+
+    &__text {
+        @apply text-center text-sm mt-3;
+
+        @screen md {
+            @apply mt-0 text-left ml-4 text-base;
+        }
+    }
+}

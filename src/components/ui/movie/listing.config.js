@@ -25,6 +25,20 @@ module.exports = {
           rating: 10,
           year: 2006
         }
+      },
+      {
+        movie: {
+          title: 'Movie Title 4',
+          rating: 6,
+          year: 2011
+        }
+      },
+      {
+        movie: {
+          title: 'Movie Title 5',
+          rating: 2,
+          year: 2019
+        }
       }
     ]
   }
