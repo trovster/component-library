@@ -14,8 +14,9 @@ npm start
 npm run watch
 ```
 
-## Helpers
 
-```cli
-npx standard --fix
-```
+## Deploying
+
+The website is hosted using Github Pages using the specific `gh-pages` branch.
+
+This can be done by using `npm run deploy`

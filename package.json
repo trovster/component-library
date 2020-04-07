@@ -14,7 +14,8 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "test": "",
     "lint": "npm run lint:js",
-    "lint:js": "npx standard --fix"
+    "lint:js": "npx standard --fix",
+    "deploy": "npm run build && push-dir --dir=www --branch=gh-pages --force"
   },
   "dependencies": {
     "@frctl/fractal": "^1.2.1",
@@ -28,26 +29,27 @@
     "husky": "^3.0.9",
     "laravel-mix": "^5.0.4",
     "lint-staged": "^9.4.2",
+    "push-dir": "^0.4.1",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
     "standard": "^14.3.3",
     "vue-template-compiler": "^2.6.11"
   },
   "lint-staged": {
-      "*.(vue|js)": [
-          "npm run lint:js",
-          "git add ."
-      ]
+    "*.(vue|js)": [
+      "npm run lint:js",
+      "git add ."
+    ]
   },
   "husky": {
-      "hooks": {
-          "commit-msg": "commitlint -e $GIT_PARAMS",
-          "pre-commit": "lint-staged"
-      }
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
   },
   "commitlint": {
-      "extends": [
-          "@commitlint/config-conventional"
-      ]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }

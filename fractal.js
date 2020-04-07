@@ -29,7 +29,7 @@ fractal.docs.set('default.status', 'draft')
 fractal.docs.set('ext', '.md')
 
 /* Specify a directory of static assets. */
-fractal.web.set('static.path', path.join(__dirname, 'build'))
+fractal.web.set('static.path', path.join(__dirname, 'public'))
 
 /* Set the static HTML build destination. */
 fractal.web.set('builder.dest', path.join(__dirname, 'build'))

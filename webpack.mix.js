@@ -15,7 +15,7 @@ const webpackConfig = require('./webpack.config')
 
 mix.webpackConfig(webpackConfig)
 
-mix.setPublicPath('build/')
+mix.setPublicPath('public')
 
 mix.sass('src/sass/site.scss', 'css/site.css')
   .options({
@@ -27,7 +27,7 @@ mix.sass('src/sass/site.scss', 'css/site.css')
 
 mix.js('src/js/site.js', 'js').extract([])
 
-mix.copyDirectory('src/assets/', 'build')
+mix.copyDirectory('src/assets/', 'public')
 
 // if (mix.inProduction()) {
 //     mix.version();
