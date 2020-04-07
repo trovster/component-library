@@ -1,0 +1,15 @@
+.navigation {
+    @apply relative p-6 mb-6 border-b;
+
+    ul {
+        @apply flex justify-center;
+    }
+
+    li {
+        @apply inline-block mx-1;
+
+        > a {
+            @apply px-6 py-3 rounded bg-gray-200;
+        }
+    }
+}

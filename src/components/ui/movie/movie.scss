@@ -1,0 +1,27 @@
+.movie {
+    @apply relative w-full block p-6 border;
+
+    &__title {
+        @apply text-2xl text-blue-700;
+    }
+
+    &__year {
+        @apply text-sm text-gray-500;
+    }
+
+    &__rating {
+        @apply absolute top-0 right-0 m-6 text-3xl text-blue-800 border bg-blue-300 px-4 py-1 rounded-lg;
+    }
+
+    &__summary {
+        @apply max-w-lg;
+    }
+}
+
+.listing--movies {
+    @apply flex self-stretch justify-between;
+
+    .movie {
+        @apply m-2;
+    }
+}

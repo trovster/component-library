@@ -1,0 +1,27 @@
+.alert {
+    @apply bg-white rounded-lg overflow-hidden shadow-xl transform transition-all;
+
+    &__container {
+        @apply fixed bottom-0 inset-x-0 px-4 pb-4;
+    }
+
+    &__bg {
+        @appy absolute inset-0 bg-gray-500 opacity-75;
+    }
+
+    &__inner {
+        @apply bg-white px-4 pt-5 pb-4;
+    }
+
+    &__body {
+        @apply mt-3 text-center;
+    }
+
+    &__title {
+        @apply text-lg leading-6 font-medium text-gray-900;
+    }
+
+    &__footer {
+        @apply bg-gray-200 px-4 py-3;
+    }
+}
