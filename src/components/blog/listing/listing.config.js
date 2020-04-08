@@ -5,24 +5,21 @@ const items = []
 
 for (let i = 0; i < make; i++) {
   items.push({
-    movie: {
+    post: {
       title: faker.lorem.words(3),
-      ratings: [
-        faker.random.number({ min: 1, max: 10, precision: 1 })
-      ],
-      year: faker.date.past().getFullYear(),
+      date: faker.date.past(),
       desc: faker.lorem.paragraph()
     }
   })
 }
 
 module.exports = {
-  order: 4,
-  title: 'Movie Listing',
-  handle: 'movie-listing',
+  order: 1,
+  title: 'Blog Listing',
+  handle: 'blog-listing',
   status: 'wip',
   default: 'default',
   context: {
-    movies: items
+    posts: items
   }
 }
