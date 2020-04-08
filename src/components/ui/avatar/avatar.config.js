@@ -3,9 +3,7 @@ module.exports = {
   status: 'ready',
   default: 'default',
   context: {
-    avatar: {
-      modifier: 'default'
-    }
+    avatar: {}
   },
   variants: [
     {
@@ -17,7 +15,7 @@ module.exports = {
       label: 'Small',
       context: {
         avatar: {
-          modifier: 'small'
+          modifiers: ['small']
         }
       }
     },
@@ -26,7 +24,7 @@ module.exports = {
       label: 'Round',
       context: {
         avatar: {
-          modifier: 'circle'
+          modifiers: ['circle']
         }
       }
     },
@@ -35,7 +33,7 @@ module.exports = {
       label: 'Small Round',
       context: {
         avatar: {
-          modifier: 'small avatar--circle'
+          modifiers: ['small', 'circle']
         }
       }
     }

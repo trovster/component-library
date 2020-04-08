@@ -12,4 +12,20 @@
             @apply mt-0 text-left ml-4 text-base;
         }
     }
+
+    &--large {
+        @apply max-w-md;
+
+        @screen md {
+            @apply flex max-w-xl;
+        }
+
+        .blurb__text {
+            @apply text-xl;
+
+            @screen md {
+                @apply ml-8 text-2xl;
+            }
+        }
+    }
 }

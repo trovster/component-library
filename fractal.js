@@ -17,6 +17,11 @@ const hbs = require('@frctl/handlebars')({
     uppercase: function (str) {
       return str.toUpperCase()
     },
+    modifier: function (prefix, modifiers) {
+      return (modifiers || []).map((modifier) => {
+        return `${prefix}--${modifier}`
+      }).concat([prefix]).map((e, i, arr) => i === 0 ? arr[arr.length - 1] : arr[i - 1]).join(' ')
+    },
     ifeq: function (a, b, options) {
       if (a === b) {
         return options.fn(this)
