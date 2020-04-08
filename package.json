@@ -15,19 +15,20 @@
     "test": "",
     "lint": "npm run lint:js",
     "lint:js": "npx standard --fix",
-    "deploy": "npm run build && push-dir --dir=build --branch=gh-pages --force"
+    "deploy": "npm run build && push-dir --dir=build --branch=gh-pages --force",
+    "install": "npm run production"
   },
   "dependencies": {
     "@frctl/fractal": "^1.2.1",
     "alpinejs": "^2.2.5",
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.4",
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
-    "cross-env": "^7.0.2",
     "husky": "^3.0.9",
-    "laravel-mix": "^5.0.4",
     "lint-staged": "^9.4.2",
     "push-dir": "^0.4.1",
     "sass": "^1.26.3",
