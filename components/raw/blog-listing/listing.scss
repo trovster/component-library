@@ -1,0 +1,23 @@
+.listing--posts {
+    @apply flex flex-wrap -mx-2 px-4 py-2;
+
+    > .post {
+        @apply p-2 w-full;
+
+        .post__title {
+            @apply text-2xl;
+        }
+
+        .post__summary {
+            @apply text-sm;
+        }
+
+        @screen md {
+            @apply w-1/2;
+        }
+
+        @screen lg {
+            @apply w-1/3;
+        }
+    }
+}

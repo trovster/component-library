@@ -4,6 +4,10 @@
     > .movie {
         @apply p-2 w-full;
 
+        .movie__title {
+            @apply text-2xl;
+        }
+
         .movie__summary {
             @apply text-sm;
         }

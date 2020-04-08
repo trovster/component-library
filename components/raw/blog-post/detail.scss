@@ -1,0 +1,21 @@
+.post {
+    @apply relative;
+
+    &__inner {
+        @apply p-6 border rounded-lg;
+    }
+
+    &__title {
+        @apply mb-2 text-4xl text-blue-700 leading-tight;
+    }
+
+    &__date {
+        @apply mb-2 text-sm text-gray-500;
+    }
+
+    &__content {
+        p {
+            @apply my-3;
+        }
+    }
+}
