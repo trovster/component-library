@@ -26,7 +26,7 @@ const hbs = require('@frctl/handlebars')({
     icon: function (icon) {
       const path = fractal.web.get('static.path')
 
-      return fs.readFileSync(`${path}/icons/icon-${icon}`)
+      return fs.readFileSync(`${path}/icons/md-${icon}`)
     },
     ifeq: function (a, b, options) {
       if (a === b) {
