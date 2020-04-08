@@ -4,8 +4,7 @@ module.exports = {
   default: 'default',
   context: {
     button: {
-      text: 'Default Button',
-      modifier: 'default'
+      text: 'Default Button'
     }
   },
   variants: [
@@ -19,7 +18,7 @@ module.exports = {
       context: {
         button: {
           text: 'Success Button',
-          modifier: 'success'
+          modifiers: ['success']
         }
       }
     },
@@ -29,7 +28,7 @@ module.exports = {
       context: {
         button: {
           text: 'Warning Button',
-          modifier: 'warning'
+          modifiers: ['warning']
         }
       }
     },
@@ -39,7 +38,7 @@ module.exports = {
       context: {
         button: {
           text: 'Error Button',
-          modifier: 'error'
+          modifiers: ['error']
         }
       }
     }

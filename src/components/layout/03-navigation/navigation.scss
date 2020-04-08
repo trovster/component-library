@@ -10,14 +10,14 @@
     }
 
     li {
-        @apply block w-full text-center border-t-2;
+        @apply block w-full text-center border-t-2 bg-gray-200;
 
         &:first-child {
             @apply border-0;
         }
 
         @screen sm {
-            @apply inline-block w-auto mx-1 border-0 bg-gray-200 rounded;
+            @apply inline-block w-auto mx-1 border-0 rounded;
         }
 
         > a {

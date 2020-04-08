@@ -15,7 +15,7 @@ module.exports = {
     buttonPrimary: {
       button: {
         text: 'Complete',
-        modifier: 'success'
+        modifiers: ['success']
       }
     }
   },
@@ -34,13 +34,13 @@ module.exports = {
         },
         icon: {
           icon: {
-            modifier: 'warning'
+            modifiers: ['warning']
           }
         },
         buttonPrimary: {
           button: {
             text: 'Deactivate',
-            modifier: 'error'
+            modifiers: ['error']
           }
         }
       }

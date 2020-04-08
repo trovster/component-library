@@ -1,5 +1,5 @@
-<div class="blurb">
-  {{ render '@avatar--small-circle' }}
+<div class="{{modifier 'blurb' blurb.modifiers}}">
+  {{ render '@avatar' avatar merge=true }}
 
   <p class="blurb__text">{{ blurb.text }}</p>
 </div>
