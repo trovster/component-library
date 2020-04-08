@@ -6,8 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/trovster/component-library.git"
+    "type": "git",
+    "url": "https://github.com/trovster/component-library.git"
   },
   "scripts": {
     "start": "npm run development && fractal start --sync",
@@ -22,6 +22,7 @@
     "lint": "npm run lint:js",
     "lint:js": "npx standard --fix",
     "deploy": "npm run build && push-dir --dir=build --branch=gh-pages --force",
+    "release": "standard-version",
     "install": "npm run production"
   },
   "dependencies": {
@@ -41,6 +42,7 @@
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
     "standard": "^14.3.3",
+    "standard-version": "^7.1.0",
     "vue-template-compiler": "^2.6.11"
   },
   "lint-staged": {
@@ -59,5 +61,11 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "standard-version": {
+    "skip": {
+      "changelog": true,
+      "tag": true
+    }
   }
 }
