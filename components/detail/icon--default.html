@@ -152,7 +152,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-1200adb30378ab424b3f41bd6608cc59-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon--default"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon__svg"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"currentColor"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 24 24"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">"round"</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">"round"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
@@ -164,8 +164,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-1200adb30378ab424b3f41bd6608cc59-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>
-    <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon--</span></span></span><span class="hljs-template-variable">{{ icon.modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{modifier 'icon' icon.modifiers}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon__svg"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"currentColor"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 24 24"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">"round"</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">"round"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ icon.svg }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
@@ -973,10 +972,21 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-blurb">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Blurb</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="blurb.html" data-pjax>
-                <span>Blurb</span>
+            <a class="Tree-entityLink" href="blurb--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -993,6 +1003,35 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="blurb--large.html" data-pjax>
+                <span>Large</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
