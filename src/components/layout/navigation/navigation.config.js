@@ -8,7 +8,7 @@ module.exports = {
       items: {
         'page-homepage': 'Home',
         'page-movie-listing': 'Movies',
-        'page-posts': 'Posts',
+        'page-blog-listing': 'Posts',
         'page-about': 'About'
       }
     }

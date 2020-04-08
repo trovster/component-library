@@ -1,14 +1,14 @@
-.listing--movies {
+.listing--posts {
     @apply flex flex-wrap -mx-2 px-4 py-2;
 
-    > .movie {
+    > .post {
         @apply p-2 w-full;
 
-        .movie__title {
+        .post__title {
             @apply text-2xl;
         }
 
-        .movie__summary {
+        .post__summary {
             @apply text-sm;
         }
 

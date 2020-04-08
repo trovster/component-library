@@ -25,7 +25,10 @@ mix.sass('src/sass/site.scss', 'css/site.css')
     ]
   })
 
-mix.js('src/js/site.js', 'js').extract([])
+mix.js('src/js/site.js', 'js').extract([
+  'alpinejs',
+  'highlight.js'
+])
 
 mix.copyDirectory('src/assets/', 'public')
 mix.copyDirectory('node_modules/heroicons/dist/outline-md/', 'public/icons')

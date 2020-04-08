@@ -1,4 +1,4 @@
-.movie {
+.post {
     @apply relative;
 
     &__inner {
@@ -9,19 +9,13 @@
         @apply mb-2 text-4xl text-blue-700 leading-tight;
     }
 
-    &__year {
+    &__date {
         @apply mb-2 text-sm text-gray-500;
     }
 
-    &__watched {
-        @apply mb-2 text-sm text-gray-500;
-
-        em {
-            @apply not-italic;
+    &__content {
+        p {
+            @apply my-3;
         }
-    }
-
-    &__summary {
-        @apply max-w-lg;
     }
 }
