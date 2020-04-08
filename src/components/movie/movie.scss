@@ -1,3 +1,6 @@
+@import "rating/rating";
+@import "listing/listing";
+
 .movie {
     @apply relative block;
 
@@ -13,41 +16,7 @@
         @apply text-sm text-gray-500;
     }
 
-    &__rating {
-        @apply inline-block text-3xl text-blue-800 text-center border bg-blue-300 px-4 py-1 rounded-lg;
-
-        @each $score, $color in $scores {
-            &--#{$score} {
-                @apply bg-#{$color}-300 text-#{$color}-800;
-            }
-        }
-    }
-
     &__summary {
         @apply max-w-lg mt-2;
-    }
-
-    // Elements inside movie itself.
-    .movie__rating {
-        @apply absolute top-0 right-0 mt-6 mr-6;
-    }
-}
-
-.listing--movies {
-    @apply flex flex-wrap -mx-2 px-4 py-2;
-
-    > .movie {
-        @apply p-2 w-full;
-
-        .movie__summary {
-            @apply text-sm;
-        }
-
-        @screen md {
-            @apply w-1/2;
-        }
-        @screen lg {
-            @apply w-1/3;
-        }
     }
 }

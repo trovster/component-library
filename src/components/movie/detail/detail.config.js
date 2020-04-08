@@ -1,4 +1,5 @@
 module.exports = {
+  order: 5,
   title: 'Movie',
   handle: 'movie',
   status: 'wip',

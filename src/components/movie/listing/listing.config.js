@@ -1,4 +1,5 @@
 module.exports = {
+  order: 4,
   title: 'Movie Listing',
   handle: 'movie-listing',
   status: 'wip',
