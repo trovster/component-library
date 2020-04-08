@@ -19,7 +19,7 @@ const hbs = require('@frctl/handlebars')({
     titlecase: (str) => str.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()),
     lowercase: (str) => str.toLowerCase(),
     uppercase: (str) => str.toUpperCase(),
-    json: (context) => JSON.stringify(context),
+    json: (json) => JSON.stringify(json),
     modifier: (prefix, modifiers) => {
       return (modifiers || []).map((modifier) => {
         return `${prefix}--${modifier}`

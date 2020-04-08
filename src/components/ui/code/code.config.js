@@ -20,7 +20,12 @@ module.exports = {
       context: {
         code: {
           modifiers: ['php'],
-          code: 'echo $var === true ? "Yes" : "No"'
+          code: `echo $var === true ? "Yes" : "No"
+
+class Factory
+{
+    function list(int $count = 10);
+}`
         }
       }
     },
@@ -30,7 +35,43 @@ module.exports = {
       context: {
         code: {
           modifiers: ['js'],
-          code: 'fs.readFileSync(`${path}/${file}`)'
+          code: `const json = (str) => JSON.stringify(str)
+
+if (a === b) {
+  return false
+}
+
+return true`
+        }
+      }
+    },
+    {
+      name: 'css',
+      label: 'CSS',
+      context: {
+        code: {
+          modifiers: ['css'],
+          code: `.text-lg {
+    font-size: 24px;
+}
+.text-grey-500 {
+    color: #ccc;
+}`
+        }
+      }
+    },
+    {
+      name: 'html',
+      label: 'HTML',
+      context: {
+        code: {
+          modifiers: ['html'],
+          code: `<!DOCTYPE html>
+<title>Title</title>
+<body>
+  <h1 class="text-lg color-gray-500">Title</h1>
+  <!-- here goes the rest of the page -->
+</body>`
         }
       }
     },
@@ -40,7 +81,8 @@ module.exports = {
       context: {
         code: {
           modifiers: ['cli'],
-          code: 'php artisan migrate:fresh --seed'
+          code: `brew cask install docker
+php artisan migrate:fresh --seed`
         }
       }
     }

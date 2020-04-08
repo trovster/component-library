@@ -1,7 +1,7 @@
-.code {
-    @apply p-3 bg-gray-900 text-white;
+@import "highlight.js/scss/solarized-dark";
 
+.code {
     > code {
-        @apply relative w-screen max-w-4xl;
+        @apply relative p-6;
     }
 }
