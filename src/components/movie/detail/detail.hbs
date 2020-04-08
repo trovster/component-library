@@ -1,10 +1,14 @@
 <div class="movie">
   <div class="movie__inner">
     <h3 class="movie__title">{{ movie.title }}</h3>
-    <p class="movie__year">{{ movie.year }}</p>
-      {{ render '@movie-rating' movie merge=true }}
+
+    {{ render '@movie-rating' movie }}
+    {{ render '@movie-meta' movie merge=true }}
+
     <div class="movie__summary">
       <p>{{ movie.desc }}</p>
     </div>
+
+    {{ render '@movie-review' }}
   </div>
 </div>

@@ -1,22 +1,6 @@
 @import "rating/rating";
+@import "review/review";
+@import "meta/meta";
+
 @import "listing/listing";
-
-.movie {
-    @apply relative block;
-
-    &__inner {
-        @apply p-6 border rounded-lg;
-    }
-
-    &__title {
-        @apply text-2xl text-blue-700;
-    }
-
-    &__year {
-        @apply text-sm text-gray-500;
-    }
-
-    &__summary {
-        @apply max-w-lg mt-2;
-    }
-}
+@import "detail/detail";
