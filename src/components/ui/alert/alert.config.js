@@ -34,7 +34,8 @@ module.exports = {
         },
         icon: {
           icon: {
-            modifiers: ['warning']
+            icon: 'exclamation.svg',
+            modifiers: ['error']
           }
         },
         buttonPrimary: {
