@@ -22,7 +22,7 @@
     "lint": "npm run lint:js",
     "lint:js": "npx standard --fix",
     "deploy": "npm run build && push-dir --dir=build --branch=gh-pages --force",
-    "release": "standard-version",
+    "release": "standard-version --tag-prefix=",
     "install": "npm run production"
   },
   "dependencies": {
@@ -65,8 +65,7 @@
   },
   "standard-version": {
     "skip": {
-      "changelog": true,
-      "tag": true
+      "changelog": true
     }
   }
 }
