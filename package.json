@@ -1,8 +1,14 @@
 {
   "name": "trovster-components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "title": "trovster.com Component Library",
   "description": "Web components for trovster.com using Fractal.",
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/trovster/component-library.git"
+  },
   "scripts": {
     "start": "npm run development && fractal start --sync",
     "build": "npm run production && fractal build",
@@ -22,6 +28,7 @@
     "@frctl/fractal": "^1.2.1",
     "alpinejs": "^2.2.5",
     "cross-env": "^7.0.2",
+    "heroicons-ui": "^1.0.0",
     "laravel-mix": "^5.0.4",
     "tailwindcss": "^1.2.0"
   },

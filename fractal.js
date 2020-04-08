@@ -1,4 +1,5 @@
 const path = require('path')
+const fs = require('fs')
 const packageJson = require('./package.json')
 
 /* Create a new Fractal instance and export it for use elsewhere if required. */
@@ -21,6 +22,11 @@ const hbs = require('@frctl/handlebars')({
       return (modifiers || []).map((modifier) => {
         return `${prefix}--${modifier}`
       }).concat([prefix]).map((e, i, arr) => i === 0 ? arr[arr.length - 1] : arr[i - 1]).join(' ')
+    },
+    icon: function (icon) {
+      const path = fractal.web.get('static.path')
+
+      return fs.readFileSync(`${path}/icons/icon-${icon}`)
     },
     ifeq: function (a, b, options) {
       if (a === b) {

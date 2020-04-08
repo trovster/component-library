@@ -1,7 +1,8 @@
 .icon {
     @apply mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-gray-100;
 
-    &__svg {
+    &__svg,
+    > svg {
         @apply h-6 w-6 text-gray-600;
     }
 
@@ -10,6 +11,10 @@
             @apply bg-#{$color}-100;
 
             .icon__svg {
+                @apply text-#{$color}-600;
+            }
+
+            svg {
                 @apply text-#{$color}-600;
             }
         }

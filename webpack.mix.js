@@ -28,9 +28,4 @@ mix.sass('src/sass/site.scss', 'css/site.css')
 mix.js('src/js/site.js', 'js').extract([])
 
 mix.copyDirectory('src/assets/', 'public')
-
-// if (mix.inProduction()) {
-//     mix.version();
-// } else {
-//     mix.browserSync(browserSyncConfig);
-// }
+mix.copyDirectory('node_modules/heroicons-ui/icons/', 'public/icons')
