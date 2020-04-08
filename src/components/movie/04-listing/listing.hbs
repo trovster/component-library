@@ -1,0 +1,14 @@
+<div class="listing listing--movies">
+  {{#each movies }}
+    <div class="movie">
+      <div class="movie__inner">
+        <h3 class="movie__title">{{ movie.title }}</h3>
+        <p class="movie__year">{{ movie.year }}</p>
+        {{ render '@movie-rating' movie }}
+        <div class="movie__summary">
+          <p>{{ movie.desc }}</p>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

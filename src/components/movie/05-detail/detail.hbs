@@ -1,8 +1,8 @@
-<div class="movie movie--score-{{ movie.rating }}">
+<div class="movie">
   <div class="movie__inner">
     <h3 class="movie__title">{{ movie.title }}</h3>
     <p class="movie__year">{{ movie.year }}</p>
-    <p class="movie__rating"><strong>{{ movie.rating }}</strong></p>
+      {{ render '@movie-rating' movie merge=true }}
     <div class="movie__summary">
       <p>{{ movie.desc }}</p>
     </div>
