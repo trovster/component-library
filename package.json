@@ -1,6 +1,6 @@
 {
   "name": "trovster-components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "trovster.com Component Library",
   "description": "Web components for trovster.com using Fractal.",
   "scripts": {
