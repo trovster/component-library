@@ -15,20 +15,19 @@ const theme = require('@frctl/mandelbrot')({
 // Setup handlebar helpers.
 const hbs = require('@frctl/handlebars')({
   helpers: {
-    uppercase: function (str) {
-      return str.toUpperCase()
-    },
-    modifier: function (prefix, modifiers) {
+    uppercase: (str) => str.toUpperCase(),
+    json: (context) => JSON.stringify(context),
+    modifier: (prefix, modifiers) => {
       return (modifiers || []).map((modifier) => {
         return `${prefix}--${modifier}`
       }).concat([prefix]).map((e, i, arr) => i === 0 ? arr[arr.length - 1] : arr[i - 1]).join(' ')
     },
-    icon: function (icon) {
+    icon: (icon) => {
       const path = fractal.web.get('static.path')
 
-      return fs.readFileSync(`${path}/icons/icon-${icon}`)
+      return fs.readFileSync(`${path}/icons/md-${icon}`)
     },
-    ifeq: function (a, b, options) {
+    ifeq: (a, b, options) => {
       if (a === b) {
         return options.fn(this)
       }

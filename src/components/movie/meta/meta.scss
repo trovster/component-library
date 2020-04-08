@@ -1,0 +1,29 @@
+.movie__meta {
+    @apply relative;
+
+    dl {
+        @apply flex flex-wrap w-64;
+    }
+
+    dt {
+        @apply truncate text-gray-500;
+        flex: 0 0 33%;
+
+        &:after {
+            content: ":";
+        }
+    }
+
+    dd {
+        @apply truncate text-left ml-auto text-gray-700;
+        flex: 0 0 66%;
+    }
+
+    .movie & {
+        @apply my-3;
+
+        @screen md {
+            @apply float-right mx-6 my-0 pb-6;
+        }
+    }
+}

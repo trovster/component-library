@@ -1,4 +1,5 @@
 module.exports = {
+  order: 2,
   title: 'Footer',
   status: 'wip',
   default: 'default',

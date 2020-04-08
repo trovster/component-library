@@ -1,6 +1,7 @@
 module.exports = {
-  title: 'Movie Detail',
-  handle: 'page-movie-detail',
+  order: 2,
+  title: 'Movie Listing',
+  handle: 'page-movie-listing',
   status: 'prototype',
   context: {
     navigation: {

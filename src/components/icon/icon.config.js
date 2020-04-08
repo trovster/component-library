@@ -4,7 +4,7 @@ module.exports = {
   default: 'default',
   context: {
     icon: {
-      icon: 'information.svg'
+      icon: 'information-circle.svg'
     }
   },
   variants: [
@@ -17,7 +17,7 @@ module.exports = {
       label: 'Success',
       context: {
         icon: {
-          icon: 'plus-circle.svg',
+          icon: 'check-circle.svg',
           modifiers: ['success']
         }
       }
