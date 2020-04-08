@@ -1,0 +1,7 @@
+.code {
+    @apply p-3 bg-gray-900 text-white;
+
+    > code {
+        @apply relative w-screen max-w-4xl;
+    }
+}
