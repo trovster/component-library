@@ -1,0 +1,19 @@
+.movie {
+    @apply relative;
+
+    &__inner {
+        @apply p-6 border rounded-lg;
+    }
+
+    &__title {
+        @apply text-2xl text-blue-700;
+    }
+
+    &__year {
+        @apply text-sm text-gray-500;
+    }
+
+    &__summary {
+        @apply max-w-lg mt-2;
+    }
+}
