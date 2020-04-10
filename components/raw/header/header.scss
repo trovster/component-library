@@ -1,7 +1,15 @@
 .header {
-    @apply relative py-6 border-b;
-}
+    @apply flex flex-col flex-wrap justify-center px-6 mx-auto max-w-screen-xl;
 
-.header__logo {
-    @apply relative mx-auto block overflow-hidden text-center text-xl;
+    @screen sm {
+        @apply flex-row justify-between;
+    }
+
+    &__logo {
+        @apply text-center lowercase -mb-4;
+
+        @screen sm {
+            @apply mb-0;
+        }
+    }
 }

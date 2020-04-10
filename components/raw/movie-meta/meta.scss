@@ -6,7 +6,7 @@
     }
 
     dt {
-        @apply truncate text-gray-500;
+        @apply truncate text-gray-light;
         flex: 0 0 33%;
 
         &:after {
@@ -15,7 +15,7 @@
     }
 
     dd {
-        @apply truncate text-left ml-auto text-gray-700;
+        @apply truncate text-left ml-auto;
         flex: 0 0 66%;
     }
 
