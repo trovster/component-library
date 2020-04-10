@@ -1,16 +1,16 @@
 .post {
-    @apply relative;
+    @apply relative p-6;
 
     &__inner {
-        @apply p-6 border rounded-lg;
+        //
     }
 
     &__title {
-        @apply mb-2 text-4xl text-blue-700 leading-tight;
+        @apply mb-2 text-4xl leading-tight;
     }
 
     &__date {
-        @apply mb-2 text-sm text-gray-500;
+        @apply mb-2 text-gray-light;
     }
 
     &__content {

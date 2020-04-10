@@ -1,7 +1,7 @@
 .footer {
-    @apply relative pt-3 mt-6 border-t text-center;
+    @apply pb-6 pt-3 border-t border-gray text-center;
 }
 
 .footer__copyright {
-    @apply text-xs p-6 mt-6 border-t;
+    @apply text-xs;
 }

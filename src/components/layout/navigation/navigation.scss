@@ -1,41 +1,25 @@
 .navigation {
-    @apply relative p-6 mb-6 border-b;
+    @apply flex self-center;
 
     ul {
-        @apply relative;
-
-        @screen sm {
-            @apply flex justify-center;
-        }
+        @apply flex justify-center;
     }
 
     li {
-        @apply block w-full text-center border-t-2 bg-gray-200;
-
-        &:first-child {
-            @apply border-0;
-        }
-
-        @screen sm {
-            @apply inline-block w-auto mx-1 border-0 rounded;
-        }
+        @apply flex lowercase mx-3;
 
         > a {
-            @apply block px-6 py-3;
-
-            @screen sm {
-                @apply rounded;
-            }
+            @apply block py-2 border-transparent border-b-2;
 
             &:hover,
             &:focus,
             &:active {
-                @apply bg-gray-400 text-gray-900;
+                @apply border-accent;
             }
         }
 
         &.active {
-            @apply bg-blue-300;
+            @apply border-accent;
         }
     }
 }

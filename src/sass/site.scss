@@ -3,22 +3,18 @@
 @import "tailwindcss/utilities";
 
 @import "config";
+@import "fonts";
 
-@import "../components/layout/header/header";
-@import "../components/layout/footer/footer";
-@import "../components/layout/navigation/navigation";
+@import "../components/layout/layout";
+@import "../components/typography/typography";
 
 @import "../components/movie/movie";
 @import "../components/blog/blog";
 
-@import "../components/ui/code/code";
-@import "../components/ui/alert/alert";
+// @import "../components/ui/alert/alert";
 @import "../components/ui/avatar/avatar";
 @import "../components/ui/blurb/blurb";
+@import "../components/ui/code/code";
 
-@import "../components/button/button";
-@import "../components/icon/icon";
-
-.listing {
-    @apply relative mx-auto max-w-screen-xl;
-}
+// @import "../components/button/button";
+// @import "../components/icon/icon";

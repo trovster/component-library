@@ -5,8 +5,8 @@ module.exports = {
   default: 'default',
   context: {
     header: {
-      text: 'trovster.com',
-      link: '#'
+      text: 'TM.',
+      link: 'page-homepage'
     }
   }
 }
