@@ -1,20 +1,21 @@
 .movie {
-    @apply relative;
+    @apply relative p-6;
 
     &__inner {
-        @apply p-6 border rounded-lg;
+        //
+    }
+
+    &__header {
+        @apply flex justify-between items-start;
     }
 
     &__title {
-        @apply mb-2 text-4xl text-blue-700 leading-tight;
+        @apply mb-2 mr-4 text-4xl leading-tight;
     }
 
-    &__year {
-        @apply mb-2 text-sm text-gray-500;
-    }
-
+    &__year,
     &__watched {
-        @apply mb-2 text-sm text-gray-500;
+        @apply mb-2 text-gray-light;
 
         em {
             @apply not-italic;

@@ -1,0 +1,15 @@
+@import "header/header";
+@import "footer/footer";
+@import "navigation/navigation";
+
+body {
+    @apply bg-white text-black font-body text-base;
+
+    // html.mode-dark & {
+        @apply bg-background text-white;
+    // }
+}
+
+main {
+    @apply relative mx-auto max-w-screen-xl;
+}

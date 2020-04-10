@@ -1,3 +1,5 @@
 <header class="header">
-    <h1><a href="{{ header.link }}" class="header__logo">{{ header.text }}</a></h1>
+    <h1 class="header__logo"><a href="{{ header.link }}">{{ header.text }}</a></h1>
+
+    {{ render '@navigation' }}
 </header>

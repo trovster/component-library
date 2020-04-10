@@ -6,12 +6,14 @@
     }
 
     &__content {
+        @apply max-w-2xl;
+
         p {
             @apply my-3;
         }
     }
 
     .movie & {
-        @apply pt-6 mt-6 border-t;
+        @apply pt-6 mt-6 border-t border-gray;
     }
 }
