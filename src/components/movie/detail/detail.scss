@@ -10,12 +10,13 @@
     }
 
     &__title {
-        @apply mb-2 mr-4 text-4xl leading-tight;
+        @apply inline px-2 py-1 -ml-2 mr-4 text-4xl leading-tight rounded-tl-sm;
+        box-decoration-break: clone;
     }
 
     &__year,
     &__watched {
-        @apply mb-2 text-gray-light;
+        @apply mb-2 mt-1 text-gray-light;
 
         em {
             @apply not-italic;

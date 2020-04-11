@@ -9,6 +9,14 @@
         @apply grid-cols-3;
     }
 
+    a:hover,
+    a:focus,
+    a:active {
+        .post__title {
+            @apply bg-accent;
+        }
+    }
+
     > .post {
         @apply border border-gray rounded p-4;
 
