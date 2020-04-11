@@ -1,16 +1,17 @@
 .post {
-    @apply relative p-6;
+    @apply relative max-w-screen-md mx-auto;
 
     &__inner {
         //
     }
 
     &__title {
-        @apply mb-2 text-4xl leading-tight;
+        @apply inline px-2 py-1 -mx-2 text-4xl leading-tight rounded-tl-sm;
+        box-decoration-break: clone;
     }
 
     &__date {
-        @apply mb-2 text-gray-light;
+        @apply mt-1 mb-2;
     }
 
     &__content {
