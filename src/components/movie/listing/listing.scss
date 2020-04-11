@@ -1,5 +1,5 @@
 .listing--movies {
-    @apply grid grid-cols-1 gap-6 p-6;
+    @apply grid grid-cols-1 gap-6 py-6;
 
     @screen md {
         @apply grid-cols-2;

@@ -1,5 +1,5 @@
 module.exports = {
-  order: 3,
+  order: 2,
   title: 'Text',
   handle: 'typograhy-text',
   status: 'wip',

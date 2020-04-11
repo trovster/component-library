@@ -1,10 +1,12 @@
+const merge = require('deepmerge')
 const plugin = require('tailwindcss/plugin')
+const typography = require('./config/typography')
 
 module.exports = {
   theme: {
     fontFamily: {
       display: ['Noto Serif', 'serif'],
-      body: ['Montserrat', 'sans-serif']
+      body: ['Noto Sans', 'sans-serif']
     },
     colors: {
       transparent: 'transparent',
@@ -37,17 +39,22 @@ module.exports = {
       accent: '#ff1fa5' // theme => theme('colors.pink.default'),
     },
     extend: {
-      typography: {
+      typography: merge(typography, {
+        ...typography,
         h1: {
+          fontFamily: 'Noto Serif, serif',
           color: '#fdfdfd' // theme('colors.white')
         },
         h2: {
+          fontFamily: 'Noto Serif, serif',
           color: '#fdfdfd' // theme('colors.white')
         },
         h3: {
+          fontFamily: 'Noto Serif, serif',
           color: '#fdfdfd' // theme('colors.white')
         },
         h4: {
+          fontFamily: 'Noto Serif, serif',
           color: '#fdfdfd' // theme('colors.white')
         },
         p: {
@@ -74,6 +81,9 @@ module.exports = {
             backgroundColor: '#ff1fa5' // theme('colors.pink.default'),
           }
         },
+        'a:hover': {
+          textDecoration: 'none'
+        },
         'a code': {
           backgroundColor: '#2dcdff'
         },
@@ -87,14 +97,20 @@ module.exports = {
           backgroundColor: '#333' // theme('colors.gray.default'),
         },
         pre: {
-          padding: '1rem 1.5rem',
           backgroundColor: '#333', // theme('colors.gray.default'),
           marginLeft: '50%',
           transform: 'translateX(-50%)',
           width: '100vw',
           maxWidth: '52rem'
         },
+        'pre code': {
+          fontSize: '1em'
+        },
+        'pre.code, pre.code code': {
+          backgroundColor: '#002b36'
+        },
         blockquote: {
+          fontFamily: 'Noto Serif, serif',
           fontStyle: 'italic',
           borderLeftWidth: '4px',
           borderLeftStyle: 'solid',
@@ -108,7 +124,7 @@ module.exports = {
         'blockquote > *': {
           fontSize: '1.6rem'
         }
-      }
+      })
     }
   },
   variants: {

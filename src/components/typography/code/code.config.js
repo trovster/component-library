@@ -1,4 +1,5 @@
 module.exports = {
+  order: 3,
   title: 'Code',
   handle: 'code',
   status: 'wip',

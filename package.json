@@ -30,6 +30,7 @@
     "@tailwindcss/typography": "github:tailwindcss/typography",
     "alpinejs": "^2.2.5",
     "cross-env": "^7.0.2",
+    "deepmerge": "^4.2.2",
     "faker": "^4.1.0",
     "heroicons": "^0.1.0",
     "highlight.js": "^9.18.1",
