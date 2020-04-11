@@ -1,5 +1,5 @@
 .movie {
-    @apply relative p-6;
+    @apply relative;
 
     &__inner {
         //
@@ -16,7 +16,7 @@
 
     &__year,
     &__watched {
-        @apply mb-2 mt-1 text-gray-light;
+        @apply mb-2 mt-1;
 
         em {
             @apply not-italic;

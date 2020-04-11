@@ -1,7 +1,7 @@
 module.exports = {
   order: 2,
   title: 'Headings',
-  handle: 'headings',
+  handle: 'typograhy-headings',
   status: 'wip',
   default: 'default',
   context: {

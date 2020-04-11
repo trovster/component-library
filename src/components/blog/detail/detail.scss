@@ -1,5 +1,5 @@
 .post {
-    @apply relative p-6;
+    @apply relative;
 
     &__inner {
         //
@@ -11,7 +11,7 @@
     }
 
     &__date {
-        @apply mt-1 mb-2 text-gray-light;
+        @apply mt-1 mb-2;
     }
 
     &__content {

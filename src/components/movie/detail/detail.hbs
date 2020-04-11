@@ -4,7 +4,7 @@
     <div class="movie__header">
       <div class="movie__intro">
         <h3 class="movie__title">{{titlecase movie.title }}</h3>
-        <p class="movie__watched">Last watched: <em>{{date '' }}</em></p>
+        <p class="date movie__watched">Last watched: <em>{{date '' }}</em></p>
       </div>
       {{ render '@movie-rating' movie }}
     </div>

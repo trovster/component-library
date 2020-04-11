@@ -6,7 +6,7 @@
     }
 
     &__logo {
-        @apply text-center lowercase -mb-4;
+        @apply font-display text-6xl text-center lowercase -mb-4;
 
         @screen sm {
             @apply mb-0;

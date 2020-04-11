@@ -4,7 +4,7 @@
 module.exports = {
   order: 1,
   title: 'Colours',
-  handle: 'colours',
+  handle: 'typograhy-colours',
   status: 'wip',
   default: 'default',
   context: {}
