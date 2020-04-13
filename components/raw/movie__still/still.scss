@@ -1,0 +1,7 @@
+.movie__still {
+    @apply relative w-full h-24 max-w-sm bg-gray-light;
+
+    .movie & {
+        @apply float-left mt-6;
+    }
+}

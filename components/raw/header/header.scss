@@ -11,5 +11,14 @@
         @screen sm {
             @apply mb-0;
         }
+
+        &::before {
+            @apply text-gray-light;
+            content: "<";
+        }
+        &::after {
+            @apply text-gray-light;
+            content: " />";
+        }
     }
 }

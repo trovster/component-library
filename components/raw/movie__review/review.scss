@@ -1,0 +1,19 @@
+.movie__review {
+    @apply relative clear-both;
+
+    &__title {
+        @apply text-lg mb-2;
+    }
+
+    &__content {
+        @apply mx-0;
+
+        p {
+            @apply my-3;
+        }
+    }
+
+    .movie & {
+        @apply pt-6 mt-6 border-t border-gray;
+    }
+}
