@@ -1,6 +1,6 @@
 const faker = require('faker')
 
-const make = 9
+const make = 4
 const items = []
 
 for (let i = 0; i < make; i++) {

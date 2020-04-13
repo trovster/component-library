@@ -8,4 +8,8 @@ body {
 
 main {
     @apply relative mx-auto p-6 max-w-screen-xl;
+
+    &.narrow {
+        @apply max-w-screen-md;
+    }
 }
