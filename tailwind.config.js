@@ -2,13 +2,11 @@ const merge = require('deepmerge')
 const plugin = require('tailwindcss/plugin')
 const typography = require('./config/typography')
 
-console.log(require('./config/plugin/misc'))
-
 module.exports = {
   theme: {
     fontFamily: {
-      display: ['Noto Serif', 'serif'],
-      body: ['Noto Sans', 'sans-serif']
+      display: ['Roboto Slab', 'serif'],
+      body: ['Roboto', 'sans-serif']
     },
     colors: {
       transparent: 'transparent',
@@ -44,24 +42,28 @@ module.exports = {
       typography: merge(typography, {
         ...typography,
         h1: {
-          fontFamily: 'Noto Serif, serif',
+          fontFamily: 'Roboto Slab, serif',
+          fontWeight: 300,
           color: '#fdfdfd' // theme('colors.white')
         },
         h2: {
-          fontFamily: 'Noto Serif, serif',
+          fontFamily: 'Roboto Slab, serif',
+          fontWeight: 300,
           color: '#fdfdfd' // theme('colors.white')
         },
         h3: {
-          fontFamily: 'Noto Serif, serif',
+          fontFamily: 'Roboto Slab, serif',
+          fontWeight: 300,
           color: '#fdfdfd' // theme('colors.white')
         },
         h4: {
-          fontFamily: 'Noto Serif, serif',
+          fontFamily: 'Roboto Slab, serif',
+          fontWeight: 300,
           color: '#fdfdfd' // theme('colors.white')
         },
         p: {
           color: '#fdfdfd', // theme('colors.white'),
-          fontWeight: 300
+          fontWeight: 100
         },
         li: {
           color: '#fdfdfd', // theme('colors.white'),
@@ -69,7 +71,7 @@ module.exports = {
         },
         strong: {
           color: '#fdfdfd', // theme('colors.white'),
-          fontWeight: 700
+          fontWeight: 500
         },
         a: {
           color: '#fdfdfd', // theme('colors.white'),
@@ -109,7 +111,7 @@ module.exports = {
           backgroundColor: '#002b36'
         },
         blockquote: {
-          fontFamily: 'Noto Serif, serif',
+          fontFamily: 'Roboto Slab, serif',
           fontStyle: 'italic',
           borderLeftWidth: '4px',
           borderLeftStyle: 'solid',

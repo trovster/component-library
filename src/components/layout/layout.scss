@@ -3,13 +3,9 @@
 @import "navigation/navigation";
 
 body {
-    @apply bg-white text-black font-body text-base;
-
-    // html.mode-dark & {
-        @apply bg-background text-white;
-    // }
+    @apply bg-background text-white font-hairline text-base;
 }
 
 main {
-    @apply relative mx-auto p-6 max-w-screen-lg;
+    @apply relative mx-auto p-6 max-w-screen-xl;
 }
