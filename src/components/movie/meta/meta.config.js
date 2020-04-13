@@ -3,7 +3,7 @@ const faker = require('faker')
 module.exports = {
   order: 3,
   title: 'Movie Meta',
-  handle: 'movie-meta',
+  handle: 'movie__meta',
   status: 'wip',
   default: 'default',
   context: {

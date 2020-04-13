@@ -6,15 +6,15 @@
         <h3 class="movie__title">{{titlecase movie.title }}</h3>
         <p class="date movie__watched">Last watched: <em>{{date '' }}</em></p>
       </div>
-      {{ render '@movie-rating' movie }}
+      {{ render '@movie__rating' movie }}
     </div>
 
-    {{ render '@movie-meta' movie merge=true }}
+    {{ render '@movie__meta' movie merge=true }}
 
     <div class="movie__summary">
       <p>{{ movie.desc }}</p>
     </div>
 
-    {{ render '@movie-review' }}
+    {{ render '@movie__review' }}
   </div>
 </div>

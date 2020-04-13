@@ -4,7 +4,7 @@ const faker = require('faker')
 module.exports = {
   order: 2,
   title: 'Movie Review',
-  handle: 'movie-review',
+  handle: 'movie__review',
   status: 'wip',
   default: 'default',
   context: {
