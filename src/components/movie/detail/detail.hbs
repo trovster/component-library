@@ -15,6 +15,10 @@
       <p>{{ movie.desc }}</p>
     </div>
 
+    {{ render '@movie__still' movie merge=true }}
+
+    {{ render '@movie__poster' movie merge=true }}
+
     {{ render '@movie__review' }}
   </div>
 </div>

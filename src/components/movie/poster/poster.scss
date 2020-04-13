@@ -1,0 +1,7 @@
+.movie__poster {
+    @apply relative w-48 h-64 bg-gray-light;
+
+    .movie & {
+        @apply float-right mb-6;
+    }
+}
