@@ -4,8 +4,10 @@ module.exports = {
   handle: 'page-blog-detail',
   status: 'prototype',
   context: {
-    navigation: {
-      active: 'page-blog-listing'
+    header: {
+      navigation: {
+        active: 'page-blog-listing'
+      }
     }
   }
 }

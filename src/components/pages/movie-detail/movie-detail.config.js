@@ -4,8 +4,10 @@ module.exports = {
   handle: 'page-movie-detail',
   status: 'prototype',
   context: {
-    navigation: {
-      active: 'page-movie-listing'
+    header: {
+      navigation: {
+        active: 'page-movie-listing'
+      }
     }
   }
 }

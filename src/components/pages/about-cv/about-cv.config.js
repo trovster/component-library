@@ -5,8 +5,10 @@ module.exports = {
   handle: 'page-about-cv',
   status: 'prototype',
   context: {
-    navigation: {
-      active: 'page-about'
+    header: {
+      navigation: {
+        active: 'page-about'
+      }
     }
   }
 }

@@ -18,8 +18,8 @@
             }
         }
 
-        &.active {
-            @apply border-accent;
+        &.active a {
+            @apply border-primary;
         }
     }
 }

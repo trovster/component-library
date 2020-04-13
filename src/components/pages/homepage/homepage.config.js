@@ -4,8 +4,10 @@ module.exports = {
   handle: 'page-homepage',
   status: 'prototype',
   context: {
-    navigation: {
-      active: 'page-homepage'
+    header: {
+      navigation: {
+        active: 'page-homepage'
+      }
     }
   }
 }

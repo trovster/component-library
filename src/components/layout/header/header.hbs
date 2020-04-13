@@ -1,5 +1,5 @@
 <header class="header">
     <h1 class="header__logo"><a href="{{ header.link }}">{{ header.text }}</a></h1>
 
-    {{ render '@navigation' }}
+    {{ render '@navigation' navigation merge=true }}
 </header>
