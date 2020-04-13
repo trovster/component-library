@@ -5,7 +5,7 @@ module.exports = {
   default: 'default',
   context: {
     header: {
-      text: 'TM.',
+      text: 'TM',
       link: 'page-homepage'
     }
   }

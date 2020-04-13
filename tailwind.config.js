@@ -124,6 +124,10 @@ module.exports = {
         },
         'blockquote > *': {
           fontSize: '1.6rem'
+        },
+        '.lede': {
+          fontSize: '1.6rem',
+          lineHeight: 1.25
         }
       })
     }
