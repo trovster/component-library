@@ -2,6 +2,8 @@ const merge = require('deepmerge')
 const plugin = require('tailwindcss/plugin')
 const typography = require('./config/typography')
 
+console.log(require('./config/plugin/misc'))
+
 module.exports = {
   theme: {
     fontFamily: {
@@ -87,10 +89,7 @@ module.exports = {
         'a code': {
           backgroundColor: '#2dcdff'
         },
-        'a:hover code': {
-          backgroundColor: '#ff1fa5' // theme('colors.pink.default'),
-        },
-        'a:focus code': {
+        'a:hover code, a:focus code': {
           backgroundColor: '#ff1fa5' // theme('colors.pink.default'),
         },
         code: {
@@ -132,24 +131,18 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('./config/plugin/misc'),
+    require('./config/plugin/listing.js'),
+    require('./config/plugin/blog.js'),
+    require('./config/plugin/movie.js'),
     plugin(({ addComponents, theme }) => {
-      const styles = {
+      addComponents({
         '.thing': {
           backgroundColor: theme('colors.blue.default'),
           color: theme('colors.white'),
-          '&:hover': {
-            backgroundColor: theme('colors.pink.default')
-          },
-          '&:focus': {
+          '&:hover, &:focus': {
             backgroundColor: theme('colors.pink.default')
           }
-        }
-      }
-
-      addComponents(styles)
-      addComponents({
-        '.date': {
-          color: theme('colors.gray.light')
         }
       })
     })
