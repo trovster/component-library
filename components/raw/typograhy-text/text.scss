@@ -1,3 +1,18 @@
-.rich-text {
+.typography {
     @apply max-w-screen-md mx-auto;
+
+    @import 'typography';
+}
+
+.section__heading {
+    @apply text-center text-3xl mb-6;
+}
+
+.date {
+    @apply text-gray-light;
+}
+
+.lede,
+.typography .lede {
+    @apply text-3xl leading-tight;
 }
