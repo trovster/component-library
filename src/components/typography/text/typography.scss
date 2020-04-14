@@ -1,0 +1,176 @@
+
+h1 {
+    @apply text-4xl font-light text-white leading-none font-display;
+
+    + * {
+        @apply mt-8;
+    }
+}
+
+h2 {
+    @apply text-2xl font-light text-white leading-tight font-display;
+
+    + * {
+        @apply mt-4;
+    }
+
+    * + & {
+        @apply mt-8;
+    }
+}
+
+h3 {
+    @apply text-xl font-light text-white leading-tight font-display;
+
+    + * {
+        @apply mt-2;
+    }
+
+    * + & {
+        @apply mt-6;
+    }
+
+    h2 + & {
+        @apply mt-4;
+    }
+}
+
+h4 {
+    @apply text-base font-light text-white leading-normal font-display;
+
+    + * {
+        @apply mt-2;
+    }
+
+    * + & {
+        @apply mt-6;
+    }
+
+    h3 + & {
+        @apply mt-2;
+    }
+}
+
+p {
+    @apply text-base font-hairline text-white leading-relaxed;
+
+    + p {
+        @apply mt-4;
+    }
+}
+
+strong {
+    @apply font-medium;
+}
+
+ol {
+    @apply list-decimal pl-5;
+
+    + ol {
+        @apply mt-4;
+    }
+
+    & {
+        @apply mt-4;
+    }
+
+    * + &  {
+        @apply mt-4;
+    }
+}
+
+ul {
+    @apply list-disc pl-5;
+
+    + ul {
+        @apply mt-4;
+    }
+
+    & {
+        @apply mt-4;
+    }
+
+    * + &  {
+        @apply mt-4;
+    }
+}
+
+li {
+    @apply text-base font-medium text-white leading-relaxed;
+
+    + li {
+        @apply mt-2;
+    }
+
+    p {
+        @apply mt-4;
+
+        + p {
+            @apply mt-2;
+        }
+    }
+
+    &:first-child p:first-child {
+        @apply mt-2;
+    }
+}
+
+code,
+pre.code {
+    @apply bg-gray;
+}
+
+pre {
+    @apply bg-gray max-w-4xl py-3 px-4 w-screen;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    & + * {
+        @apply mt-4;
+    }
+
+    * + & {
+        @apply mt-4;
+    }
+}
+
+code {
+    @apply px-1;
+    font-size: 0.875em;
+}
+
+pre code {
+    @apply text-base p-0;
+}
+
+a {
+    @apply text-white bg-primary font-light;
+    padding: 0 5px;
+
+    &:hover,
+    &:focus {
+        @apply bg-accent no-underline;
+
+        code {
+            @apply bg-accent;
+        }
+    }
+
+    code {
+        @apply bg-gray;
+    }
+}
+
+img {
+    @apply my-8;
+}
+
+blockquote {
+    @apply leading-tight font-display italic border-l-4 border-primary pl-4 max-w-4xl w-screen;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    > * {
+        @apply text-2xl;
+    }
+}

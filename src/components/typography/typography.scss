@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400&family=Roboto:wght@100;300;400;500&display=swap');
+@forward "text/text";
+@forward "colours/colours";
+@forward "code/code";
 
-@import "colours/colours";
-@import "text/text";
-@import "code/code";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400&family=Roboto:wght@100;300;400;500&display=swap');

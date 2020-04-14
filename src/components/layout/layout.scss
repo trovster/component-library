@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    @apply relative mx-auto px-6 max-w-screen-xl;
+    @apply relative mx-auto px-6 py-3 max-w-screen-xl;
 
     &.narrow {
         @apply max-w-screen-md;

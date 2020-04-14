@@ -1,8 +1,8 @@
-@import "rating/rating";
-@import "review/review";
-@import "meta/meta";
-@import "poster/poster";
-@import "still/still";
+@forward "rating/rating";
+@forward "review/review";
+@forward "meta/meta";
+@forward "poster/poster";
+@forward "still/still";
 
-@import "listing/listing";
-@import "detail/detail";
+@forward "listing/listing";
+@forward "detail/detail";

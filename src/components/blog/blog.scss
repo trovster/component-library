@@ -1,2 +1,2 @@
-@import "listing/listing";
-@import "detail/detail";
+@forward "listing/listing";
+@forward "detail/detail";
