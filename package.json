@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "@frctl/fractal": "^1.2.1",
-    "@tailwindcss/typography": "github:tailwindcss/typography",
     "alpinejs": "^2.2.5",
     "cross-env": "^7.0.2",
     "deepmerge": "^4.2.2",
