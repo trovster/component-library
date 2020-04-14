@@ -1,5 +1,5 @@
-const path = require('path')
 const fs = require('fs')
+const path = require('path')
 const faker = require('faker')
 const packageJson = require('./package.json')
 
@@ -26,9 +26,10 @@ const hbs = require('@frctl/handlebars')({
       }).concat([prefix]).map((e, i, arr) => i === 0 ? arr[arr.length - 1] : arr[i - 1]).join(' ')
     },
     icon: (icon) => {
-      const path = fractal.web.get('static.path')
+      const staticPath = fractal.web.get('static.path')
+      const file = path.join(staticPath, 'icons', `md-${icon}`)
 
-      return fs.readFileSync(`${path}/icons/md-${icon}`)
+      return fs.readFileSync(file)
     },
     date: (x) => {
       const date = faker.date.past()

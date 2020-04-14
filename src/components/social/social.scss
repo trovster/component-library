@@ -1,0 +1,21 @@
+.social {
+    @apply inline-flex;
+
+    > a {
+        @apply flex items-center justify-center bg-gray h-16 w-16 rounded-full bg-gray;
+    }
+
+    &--large {
+        > a {
+            @apply h-32 w-32;
+        }
+    }
+}
+
+.listing--social {
+    @apply m-4;
+
+    ul {
+        @apply flex justify-around;
+    }
+}

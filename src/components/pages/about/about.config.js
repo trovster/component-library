@@ -8,11 +8,6 @@ module.exports = {
       navigation: {
         active: 'page-about'
       }
-    },
-    avatar: {
-      avatar: {
-        modifiers: ['circle']
-      }
     }
   }
 }

@@ -1,0 +1,23 @@
+<div class="{{modifier _self.baseHandle blurb.modifiers}}">
+  <div class="about__primary">
+    {{ render '@avatar' avatar merge=true }}
+
+    <div class="typography about__content">
+      {{{ about.content }}}
+    </div>
+  </div>
+
+  <div class="about__secondary">
+    <div class="about__extra">
+      <h3 class="about__extra__title">{{ multipack.title }}</h3>
+      {{{ multipack.content }}}
+    </div>
+    <div class="about__extra">
+      <h3 class="about__extra__title">{{ geek.title }}</h3>
+      {{{ geek.content }}}
+    </div>
+  </div>
+
+  {{ render '@social' }}
+
+</div>

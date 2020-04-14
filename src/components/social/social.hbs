@@ -1,0 +1,9 @@
+<div class="listing listing--social">
+  <ul>
+    {{#each icons }}
+      <li class="{{modifier ../_self.baseHandle ../modifiers}} {{ ../_self.baseHandle }}--{{ this.key }}">
+        <a href="{{ this.url}}" rel="external">{{ this.title }}</a>
+      </li>
+    {{/each}}
+  </ul>
+</div>

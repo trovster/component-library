@@ -1,3 +1,0 @@
-## Icons
-
-Readme about icons.
