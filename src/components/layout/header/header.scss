@@ -12,13 +12,33 @@
             @apply mb-0;
         }
 
-        &::before {
-            @apply text-gray-light;
-            content: "<";
+        a {
+            @apply block;
+
+            &::before {
+                @apply text-gray-light;
+                content: "<";
+            }
+
+            &::after {
+                @apply text-gray-light;
+                content: " />";
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                @apply text-primary;
+
+                &::before {
+                    @apply text-gray;
+                }
+
+                &::after {
+                    @apply text-gray;
+                }
+            }
         }
-        &::after {
-            @apply text-gray-light;
-            content: " />";
-        }
+
     }
 }
