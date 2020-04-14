@@ -1,13 +1,15 @@
 <div class="listing listing--posts">
-  {{#each posts }}
-    <a href="page-blog-detail" class="post">
-      <div class="post__inner">
-        <h3 class="post__title">{{titlecase post.title }}</h3>
-        <p class="date post__date">{{date post.date }}</p>
-        <div class="post__summary">
-          <p>{{ post.desc }}</p>
-        </div>
-      </div>
-    </a>
-  {{/each}}
+  <ul>
+    {{#each posts }}
+      <li>
+        <a href="page-blog-detail" class="post">
+          <h3 class="post__title">{{titlecase post.title }}</h3>
+          <p class="date post__date">{{date post.date }}</p>
+          <div class="post__summary">
+            <p>{{ post.desc }}</p>
+          </div>
+      </a>
+      </li>
+    {{/each}}
+  </ul>
 </div>

@@ -1,12 +1,28 @@
 .listing--movies {
-    @apply grid grid-cols-1 gap-6 py-6;
+    @apply relative;
 
-    @screen md {
-        @apply grid-cols-2;
+    ul {
+        @apply grid grid-cols-1 gap-6 py-6 -mx-6;
+
+        @screen md {
+            @apply grid-cols-2 mx-0;
+        }
+
+        @screen lg {
+            @apply grid-cols-3;
+        }
     }
 
-    @screen lg {
-        @apply grid-cols-3;
+    li {
+        @apply p-6 pb-0 border border-gray border-b-0;
+
+        @screen md {
+            @apply p-4 border rounded;
+        }
+    }
+
+    a {
+        @apply block;
     }
 
     a:hover,
@@ -17,9 +33,7 @@
         }
     }
 
-    > .movie {
-        @apply border border-gray rounded p-4;
-
+    li > .movie {
         .movie__title {
             @apply text-2xl;
         }

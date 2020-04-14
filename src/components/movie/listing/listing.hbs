@@ -1,7 +1,8 @@
 <div class="listing listing--movies">
-  {{#each movies }}
-    <a href="page-movie-detail" class="movie">
-      <div class="movie__inner">
+  <ul>
+    {{#each movies }}
+    <li>
+      <a href="page-movie-detail" class="movie">
         <div class="movie__header">
           <div class="movie__intro">
             <h3 class="movie__title">{{titlecase movie.title }}</h3>
@@ -12,7 +13,8 @@
         <div class="movie__summary">
           <p>{{ movie.desc }}</p>
         </div>
-      </div>
-    </a>
-  {{/each}}
+      </a>
+    </li>
+    {{/each}}
+  </ul>
 </div>
