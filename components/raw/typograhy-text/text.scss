@@ -1,18 +1,15 @@
+@use 'sass:meta';
+
 .typography {
     @apply max-w-screen-md mx-auto;
 
-    @import 'typography';
+    @include meta.load-css('typography');
 }
 
 .section__heading {
-    @apply text-center text-3xl mb-6;
+    @apply text-center text-3xl;
 }
 
 .date {
     @apply text-gray-light;
-}
-
-.lede,
-.typography .lede {
-    @apply text-3xl leading-tight;
 }

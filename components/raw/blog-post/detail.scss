@@ -1,10 +1,6 @@
 .post {
     @apply relative max-w-screen-md mx-auto;
 
-    &__inner {
-        //
-    }
-
     &__title {
         @apply inline px-2 py-1 -mx-2 text-4xl leading-tight rounded-tl-sm;
         box-decoration-break: clone;

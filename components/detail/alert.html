@@ -51,6 +51,10 @@
 
     
     
+        
+        
+        
+    
 
 <div class="Pen" data-behaviour="pen" id="pen-0d1d929fe3276af4792ac7d33a34c46d">
 
@@ -83,14 +87,16 @@
     <div class="Preview-wrapper" data-role="resizer">
         <div class="Preview-resizer">
             
-             <iframe
-                class="Preview-iframe"
-                data-role="window"
-                src="../preview/alert.html"
-                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
-                 style=""
-                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
-            </iframe>
+<div class="Error Error--render">
+    <h4 class="Error-title">Error rendering component</h4>
+    <div class="Error-message Prose">
+        <p>Could not render component &#39;@icon&#39; - component not found.</p>
+
+    </div>
+    
+</div>
+
+            
         </div>
         <div class="Preview-handle" data-role="resize-handle"></div>
         <div class="Preview-overlay"></div>
@@ -152,51 +158,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-0d1d929fe3276af4792ac7d33a34c46d-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">x-data</span>=<span class="hljs-string">"{ open: true }"</span> <span class="hljs-attr">x-show</span>=<span class="hljs-string">"open"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert__container sm:inset-0 sm:flex sm:items-center sm:justify-center"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">x-show</span>=<span class="hljs-string">"open"</span> <span class="hljs-attr">x-transition:enter</span>=<span class="hljs-string">"ease-out duration-300"</span> <span class="hljs-attr">x-transition:enter-start</span>=<span class="hljs-string">"opacity-0"</span> <span class="hljs-attr">x-transition:enter-end</span>=<span class="hljs-string">"opacity-100"</span> <span class="hljs-attr">x-transition:leave</span>=<span class="hljs-string">"ease-in duration-200"</span> <span class="hljs-attr">x-transition:leave-start</span>=<span class="hljs-string">"opacity-100"</span> <span class="hljs-attr">x-transition:leave-end</span>=<span class="hljs-string">"opacity-0"</span>
-        <span class="hljs-attr">class</span>=<span class="hljs-string">"fixed inset-0 transition-opacity"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert__bg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert sm:max-w-lg sm:w-full"</span> <span class="hljs-attr">x-show</span>=<span class="hljs-string">"open"</span> <span class="hljs-attr">x-transition:enter</span>=<span class="hljs-string">"ease-out duration-300"</span> <span class="hljs-attr">x-transition:enter-start</span>=<span class="hljs-string">"opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"</span> <span class="hljs-attr">x-transition:enter-end</span>=<span class="hljs-string">"opacity-100 translate-y-0 sm:scale-100"</span> <span class="hljs-attr">x-transition:leave</span>=<span class="hljs-string">"ease-in duration-200"</span>
-        <span class="hljs-attr">x-transition:leave-start</span>=<span class="hljs-string">"opacity-100 translate-y-0 sm:scale-100"</span> <span class="hljs-attr">x-transition:leave-end</span>=<span class="hljs-string">"opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert__inner sm:p-6 sm:pb-4"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sm:flex sm:items-start"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 24 24"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"currentColor"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">"round"</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">"round"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"</span>/&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert__body sm:mt-0 sm:ml-4 sm:text-left"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert__title"</span>&gt;</span>
-                        General Popup
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-2"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-sm leading-5 text-gray-500"</span>&gt;</span>
-                            This is a general popup component. Buttons control what should happen, such as closing or further actions.
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert__footer sm:px-6 sm:flex sm:flex-row-reverse"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto"</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"open = false; setTimeout(() =&gt; open = true, 1000)"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button--success"</span>&gt;</span>
-  Complete
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-
-      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto"</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"open = false; setTimeout(() =&gt; open = true, 1000)"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button"</span>&gt;</span>
-  Cancel
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-
-      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        <pre><span class="hljs-comment">&lt;!-- Error rendering component:  --&gt;</span></pre>
         
     </code>
 </div>
@@ -212,7 +174,7 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert sm:max-w-lg sm:w-full"</span> <span class="hljs-attr">x-show</span>=<span class="hljs-string">"open"</span> <span class="hljs-attr">x-transition:enter</span>=<span class="hljs-string">"ease-out duration-300"</span> <span class="hljs-attr">x-transition:enter-start</span>=<span class="hljs-string">"opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"</span> <span class="hljs-attr">x-transition:enter-end</span>=<span class="hljs-string">"opacity-100 translate-y-0 sm:scale-100"</span> <span class="hljs-attr">x-transition:leave</span>=<span class="hljs-string">"ease-in duration-200"</span> <span class="hljs-attr">x-transition:leave-start</span>=<span class="hljs-string">"opacity-100 translate-y-0 sm:scale-100"</span> <span class="hljs-attr">x-transition:leave-end</span>=<span class="hljs-string">"opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert__inner sm:p-6 sm:pb-4"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sm:flex sm:items-start"</span>&gt;</span>
-        </span><span class="hljs-template-variable">{{ render '<a href="icon.html">@icon</a>' icon merge=true }}</span><span class="xml">
+        </span><span class="hljs-template-variable">{{ render '@icon' icon merge=true }}</span><span class="xml">
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert__body sm:mt-0 sm:ml-4 sm:text-left"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert__title"</span>&gt;</span>
             </span><span class="hljs-template-variable">{{ alert.title }}</span><span class="xml">
@@ -288,10 +250,8 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(2)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
-            
-                <a href="icon.html">@<span>icon</span></a>, 
             
                 <a href="button.html">@<span>button</span></a>
             
@@ -1051,6 +1011,70 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-social">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Social Media</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="social--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="social--large.html" data-pjax>
+                <span>Large</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-typography">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Typography</span>
@@ -1284,6 +1308,30 @@
             
             
             
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="about.html" data-pjax>
+                <span>About</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
     
         
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-avatar">

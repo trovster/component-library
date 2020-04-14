@@ -1,64 +1,67 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en-gb" dir="ltr" class="no-js">
 <head>
-    <meta charset="utf-8" />
-    <title>Alert: Default | Component Library</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
 
-    <link media="all" rel="stylesheet" href="../../css/site.css" />
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
+
+
+<title>Error rendering component alert--default | trovster.com Component Library</title>
+
 </head>
 <body>
 
-    <div x-data="{ open: true }" x-show="open" class="alert__container sm:inset-0 sm:flex sm:items-center sm:justify-center">
-  <div x-show="open" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 transition-opacity">
-    <div class="alert__bg"></div>
-  </div>
 
-  <div class="alert sm:max-w-lg sm:w-full" x-show="open" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
-    <div class="alert__inner sm:p-6 sm:pb-4">
-      <div class="sm:flex sm:items-start">
-        <div class="icon">
-    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-</svg>
 
-</div>
+<div class="Frame Frame--full" id="frame">
 
-        <div class="alert__body sm:mt-0 sm:ml-4 sm:text-left">
-          <h3 class="alert__title">
-            General Popup
-          </h3>
-          <div class="mt-2">
-            <p class="text-sm leading-5 text-gray-500">
-              This is a general popup component. Buttons control what should happen, such as closing or further actions.
-            </p>
-          </div>
-        </div>
-      </div>
+
+<div class="Error Error--render">
+    <h4 class="Error-title">Error rendering component</h4>
+    <div class="Error-message Prose">
+        <p>Could not render component &#39;@icon&#39; - component not found.</p>
+
     </div>
-    <div class="alert__footer sm:px-6 sm:flex sm:flex-row-reverse">
-      <span class="flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto" @click="open = false; setTimeout(() => open = true, 1000)">
-        <button class="button button--success">
-  Complete
-</button>
-
-      </span>
-      <span class="mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto" @click="open = false; setTimeout(() => open = true, 1000)">
-        <button class="button">
-  Cancel
-</button>
-
-      </span>
-    </div>
-  </div>
+    
+    <code class="Error-stack">
+        <pre>Error: Could not render component '@icon' - component not found.
+    at Object.render (/home/runner/work/component-library/component-library/node_modules/@frctl/handlebars/src/helpers/render.js:24:19)
+    at Object.helperWrapper (/home/runner/work/component-library/component-library/node_modules/promised-handlebars/index.js:130:23)
+    at Object.<anonymous> (/home/runner/work/component-library/component-library/node_modules/promised-handlebars/lib/utils.js:29:28)
+    at Object.wrapper (/home/runner/work/component-library/component-library/node_modules/handlebars/dist/cjs/handlebars/internal/wrapHelper.js:15:19)
+    at Object.eval [as main] (eval at createFunctionContext (/home/runner/work/component-library/component-library/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:262:23), <anonymous>:9:102)
+    at main (/home/runner/work/component-library/component-library/node_modules/handlebars/dist/cjs/handlebars/runtime.js:208:32)
+    at ret (/home/runner/work/component-library/component-library/node_modules/handlebars/dist/cjs/handlebars/runtime.js:212:12)
+    at ret (/home/runner/work/component-library/component-library/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:519:21)
+    at prepareAndResolveMarkers (/home/runner/work/component-library/component-library/node_modules/promised-handlebars/index.js:99:39)
+    at /home/runner/work/component-library/component-library/node_modules/promised-handlebars/lib/utils.js:29:28
+    at HandlebarsAdapter.render (/home/runner/work/component-library/component-library/node_modules/@frctl/handlebars/src/adapter.js:34:30)
+    at ComponentSource._renderVariant (/home/runner/work/component-library/component-library/node_modules/@frctl/fractal/src/api/components/source.js:207:30)
+    at _renderVariant.next (<anonymous>)
+    at onFulfilled (/home/runner/work/component-library/component-library/node_modules/co/index.js:65:19)
+    at tryCatcher (/home/runner/work/component-library/component-library/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/runner/work/component-library/component-library/node_modules/bluebird/js/release/promise.js:547:31)</pre>
+    </code>
+    
 </div>
 
 
-    <script src="../../js/manifest.js"></script>
-    <script src="../../js/vendor.js"></script>
-    <script src="../../js/site.js"></script>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
+
+
 
 </body>
 </html>
-

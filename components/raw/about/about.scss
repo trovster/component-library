@@ -1,0 +1,39 @@
+.about {
+    @apply relative;
+
+    .about__content {
+        > p:first-child {
+            @apply text-3xl leading-tight;
+        }
+    }
+
+    &__primary {
+        @apply block;
+
+        .avatar {
+            @apply mb-4;
+        }
+
+        @screen md {
+            @apply flex;
+
+            .avatar {
+                @apply mr-8;
+            }
+        }
+    }
+
+    &__secondary {
+        @apply grid grid-cols-1 gap-6 my-6;
+
+        @screen md {
+            @apply grid-cols-2;
+        }
+    }
+
+    &__extra {
+        &__title {
+            @apply text-2xl;
+        }
+    }
+}
